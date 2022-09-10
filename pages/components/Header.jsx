@@ -20,8 +20,7 @@ import { client } from '../../lib/client';
 import Router from 'next/router';
 import BagItem from './BagItem';
 import getStripe from '../../lib/getStripe';
-import toast from 'react-hot-toast';
-import stripe from '../api/stripe';
+
 import { useRef } from 'react';
 const Header = () => {
   const { state, dispatch } = useContext(Store);
