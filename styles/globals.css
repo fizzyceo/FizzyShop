@@ -1,16 +1,26 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+.header {
+  font-family: 'Archivo Black', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.dark {
+  background: rgb(31, 29, 29);
 }
-
-* {
-  box-sizing: border-box;
+.light {
+  background: white;
+}
+.darktext {
+  color: black;
+}
+.lighttext {
+  color: white;
+}
+.darkFill {
+  fill: black;
+}
+.lightFill {
+  fill: white;
 }
