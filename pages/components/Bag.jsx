@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Header from './Header';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 
 const Bag = () => {
   const { state, dispatch } = useContext(Store);
