@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useContext } from 'react';
 import Switch from 'react-switch';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 import { BsHandbag } from 'react-icons/bs';
 import { TbHanger } from 'react-icons/tb';
 import { motion } from 'framer-motion';

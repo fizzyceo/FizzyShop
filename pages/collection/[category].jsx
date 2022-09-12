@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Select from 'react-select';
 import Router from 'next/router';
 import { useRouter } from 'next/router';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 const collection = ({ collection, products, sort }) => {
   const [currentProducts, setcurrentProducts] = useState(
     products ? products : []

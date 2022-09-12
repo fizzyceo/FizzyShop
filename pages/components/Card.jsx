@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useState } from 'react';
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai';
 import Link from 'next/link';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 import toast, { Toaster } from 'react-hot-toast';
 const Card = React.forwardRef(({ product, loadingProducts }, ref) => {
   const [isfav, setfav] = useState(false);

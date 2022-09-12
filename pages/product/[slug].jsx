@@ -9,7 +9,7 @@ import {
 } from 'react-icons/ai';
 import { useEffect } from 'react';
 import Header from '../components/Header';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 import toast, { Toaster } from 'react-hot-toast';
 const ProductDetails = ({ product }) => {
   const {

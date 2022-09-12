@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useContext, useState } from 'react';
 import Header from './components/Header';
-import { ModeContext } from './Context/DarkMode';
+import { ModeContext } from '../Context/DarkMode';
 
 const Login = () => {
   const { Mode } = useContext(ModeContext); //CHANGE TO REDUX

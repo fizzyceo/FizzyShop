@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { AiOutlineClose, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-import { Store } from '../Context/Store';
+import { Store } from '../../Context/Store';
 
 const BagItem = ({ totalPrice, settotalPrice, item, setBagItems }) => {
   const [quantity, setQuantity] = useState(item.quantity);

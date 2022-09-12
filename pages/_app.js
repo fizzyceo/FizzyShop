@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { StoreProvider } from './Context/Store';
+import { StoreProvider } from '../Context/Store';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import { useEffect, useState } from 'react';

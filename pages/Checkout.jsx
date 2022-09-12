@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { Store } from './Context/Store';
+import { Store } from '../Context/Store';
 
 const Checkout = () => {
   const { state, dispatch } = useContext(Store);
