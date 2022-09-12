@@ -103,6 +103,7 @@ const Header = () => {
       const products = await client.fetch(query);
 
       setSearchProducts(products);
+      console.log(searchProducts);
     };
     calledfun();
   }, [search]);

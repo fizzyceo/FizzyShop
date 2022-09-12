@@ -26,7 +26,7 @@ export default function Home({ Products, brands, banners }) {
 
   return (
     <div
-      className={`flex flex-col overflow-x-hidden gap-5 bg-[#1c1c1d] ${
+      className={`flex flex-col overflow-x-hidden gap-5  ${
         currMode
           ? 'bg-[#1c1c1d] text-white border-white'
           : 'bg-slate-100 border-black text-slate-900'
