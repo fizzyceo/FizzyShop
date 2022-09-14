@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import { Store } from '../../Context/Store';
 import toast, { Toaster } from 'react-hot-toast';
+import Head from 'next/head';
 const ProductDetails = ({ product }) => {
   const {
     name,
@@ -56,6 +57,10 @@ const ProductDetails = ({ product }) => {
         state.DarkMode ? 'dark lighttext lightFill' : 'darktext darkFill light'
       } gap-12`}
     >
+      <Head>
+        <title>product - {name}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Toaster />
       <Header />
       <div

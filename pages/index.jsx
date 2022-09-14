@@ -10,7 +10,7 @@ import Banner from './components/Banner';
 import Brands from './components/Brands';
 import { client } from '../lib/client';
 import { parseCookies } from '../lib/parseCookies';
-
+import Head from 'next/head';
 export default function Home({ Products, brands, banners }) {
   const LoadProducts = async () => {
     const products = await fetch('/api/Products');
@@ -33,6 +33,13 @@ export default function Home({ Products, brands, banners }) {
       }`}
     >
       <div>
+        <Head>
+          <title>FizzyShop</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <Header />
         <Banner banners={banners} />
       </div>

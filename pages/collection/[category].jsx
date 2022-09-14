@@ -7,6 +7,7 @@ import Select from 'react-select';
 import Router from 'next/router';
 import { useRouter } from 'next/router';
 import { Store } from '../../Context/Store';
+import Head from 'next/head';
 const collection = ({ collection, products, sort }) => {
   const [currentProducts, setcurrentProducts] = useState(
     products ? products : []
@@ -39,6 +40,10 @@ const collection = ({ collection, products, sort }) => {
   };
   return (
     <div className={` w-screen overflow-x-hidden`}>
+      <Head>
+        <title>category - {collection}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header />
       <div
         className={`p-6  flex items-center justify-center flex-col gap-12 ${
