@@ -203,14 +203,16 @@ const Header = () => {
         animate={showBag ? 'openMenu' : 'closedBag'}
         variants={variants}
         className={`Bag  flex flex-col h-screen p-10 ${
-          state.DarkMode ? 'dark' : 'light'
+          state.DarkMode ? 'dark lighttext' : 'light darktext'
         } w-fit  absolute top-0 bottom-0
         right-0 z-10`}
       >
-        <motion.div className="flex h-[10%] flex-row items-center justify-between px-4 py-2 border-b-2  ">
+        <motion.div
+          className={`flex h-[10%] flex-row items-center justify-between px-4 py-2 border-b-2    `}
+        >
           {' '}
           {/**BAG TITLE */}
-          <motion.h1 className="font-bold text-2xl">BAG</motion.h1>
+          <motion.h1 className="font-bold  text-2xl">BAG</motion.h1>
           <AiOutlineClose
             onClick={ShowBag}
             className="cursor-pointer my-4 flex self-end"

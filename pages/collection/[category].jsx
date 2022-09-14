@@ -38,15 +38,15 @@ const collection = ({ collection, products, sort }) => {
       .then(() => router.reload());
   };
   return (
-    <div
-      className={`${
-        DarkMode
-          ? 'bg-[#1c1c1d] text-white border-white'
-          : 'bg-slate-100 border-black text-slate-900'
-      } w-screen overflow-x-hidden`}
-    >
+    <div className={` w-screen overflow-x-hidden`}>
       <Header />
-      <div className=" p-6  flex items-center justify-center flex-col gap-12">
+      <div
+        className={`p-6  flex items-center justify-center flex-col gap-12 ${
+          DarkMode
+            ? 'bg-[#1c1c1d] text-white border-white'
+            : 'bg-slate-100 border-black text-slate-900'
+        }`}
+      >
         <div className="flex border-b-2  w-full py-4 flex-col gap-5 items-center justify-center">
           <h1 className="font-bold  text-3xl">{collection.toUpperCase()}</h1>
         </div>
